@@ -1,7 +1,7 @@
 class circle {
 	
-	double radius;
-	String color;
+	private double radius; //Information Hiding
+	private String color;
 
 	public circle(){
 
@@ -10,20 +10,20 @@ class circle {
 
 	}
 
-	public circle(double a){
+	public circle(double a){ //Konstruktor yang bisa mengubah Radius
 
 		radius = a;
 		color = "blue";
 
 	}
 
-	public circle(double a, String b){
+	public circle(double a, String b){ 
 
 		radius = a;
 		color = b;
 	}
 
-	public double getRadius(){
+	public double getRadius(){ //Getter
 
 		return radius;
 	}
@@ -31,6 +31,17 @@ class circle {
 	public String getColor(){
 
 		return color;
+
+	}
+
+	public double setRadius(double r){ //Setter
+
+		return radius = r;
+	}
+
+	public String setColor(String c){
+
+		return color = c;
 
 	}
 
