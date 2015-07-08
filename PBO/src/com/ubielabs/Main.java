@@ -11,11 +11,11 @@ public class Main {
         Divisi SerieA = new Divisi("Serie A");
         Divisi SerieB = new Divisi("Serie B");
 
-        Klub KlubA = new Klub("Ac Milan",SerieA,Italy);
-        Klub KlubB = new Klub("Juventus",SerieA,Italy);
+        Klub KlubA = new Klub("Ac Milan",SerieA);
+        Klub KlubB = new Klub("Juventus",SerieA);
 
-        Klub KlubC = new Klub("Livorno",SerieB,Terserah);
-        Klub KlubD = new Klub("Bologna",SerieB,Terserah);
+        Klub KlubC = new Klub("Livorno",SerieB);
+        Klub KlubD = new Klub("Bologna",SerieB);
 
         Italy.setDaftarDivisi(SerieA);
         Italy.setDaftarDivisi(SerieB);
@@ -31,11 +31,11 @@ public class Main {
         SerieB.setDaftarKlub(KlubD);
 
         System.out.println("1. Get daftar divisi by nama liga ");
-        System.out.println("Daftar Divisi dari Liga Italy :   " + Italy.getDaftarDivisi());
+        System.out.println("Daftar Divisi dari Liga Italy   :   " + Italy.getDaftarDivisi());
         System.out.println("");
 
         System.out.println("2. Get Daftar Klub by nama liga");
-        System.out.println("Daftar Klub dari Liga Italy : " +Italy.getDaftarKlub());
+        System.out.println("Daftar Klub dari Liga Italy     : " + Italy.getDaftarKlub());
         System.out.println("");
 
         System.out.println("3. Get Daftar Klub by nama Divisi");
